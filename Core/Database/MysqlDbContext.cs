@@ -1,3 +1,4 @@
+using TiendaOnline1.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace TiendaOnline1.Core.Database{
@@ -5,8 +6,9 @@ namespace TiendaOnline1.Core.Database{
     {
         public MysqlDbContext(DbContextOptions<MysqlDbContext> options) : base(options){}
 
-        public DbSet<Models.Product> Products { get; set; } = null!;
-        public DbSet<Models.User> Users { get; set; } = null!;
+        public DbSet<Product> Products { get; set; } = null!;
+        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<SuperUser> SuperUser { get; set; } = null!;
     }
 }
 

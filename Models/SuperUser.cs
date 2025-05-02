@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 public class SuperUser
 {
     [Key]
-    public int Id { get; set; }
+    public string Id { get; set; } = string.Empty;
 
     [Required]
     [MaxLength(100)]
@@ -18,5 +18,5 @@ public class SuperUser
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     [ForeignKey("UserId")]
-    public User? UserId { get; set; }
+    public string UserId { get; set; } = string.Empty;
 }
