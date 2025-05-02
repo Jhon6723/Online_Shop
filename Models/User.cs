@@ -26,7 +26,6 @@ namespace TiendaOnline1.Models
         [MaxLength(50)]
         public string Role { get; set; } = string.Empty;
 
-        [Required]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }

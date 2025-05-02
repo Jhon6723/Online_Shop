@@ -9,7 +9,16 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace TiendaOnline1.Services{       
+namespace TiendaOnline1.Services
+{
+    /// <summary>
+    /// Provides services for managing users, including creating users, retrieving user information, 
+    /// and generating JSON Web Tokens (JWT) for authentication.
+    /// </summary>
+    /// <remarks>
+    /// This service interacts with the database to perform user-related operations. It uses AutoMapper 
+    /// for mapping DTOs to entities and relies on configuration settings for JWT generation.
+    /// </remarks>
     public class UserService : IUserServiceDatabase
     {
         private readonly IMapper _mapper;
