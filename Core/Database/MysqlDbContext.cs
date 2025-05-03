@@ -9,6 +9,7 @@ namespace TiendaOnline1.Core.Database{
         public DbSet<Product> Products { get; set; } = null!;
         public DbSet<User> Users { get; set; } = null!;
         public DbSet<SuperUser> SuperUser { get; set; } = null!;
+
     }
 }
 
